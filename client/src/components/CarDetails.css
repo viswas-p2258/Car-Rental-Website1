@@ -1,0 +1,53 @@
+.car-details {
+  padding: 40px 0;
+}
+
+.car-details-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.car-images img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.car-info h1 {
+  margin-bottom: 10px;
+}
+
+.car-subtitle {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.car-specs,
+.car-description {
+  margin-top: 30px;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.booking-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .car-details-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .specs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
